@@ -4,14 +4,14 @@ Resources:
     Properties:
       TableName: ${self:custom.tableName}
       AttributeDefinitions:
-        - AttributeName: userid
+        - AttributeName: userId
           AttributeType: S
-        - AttributeName: noteid
+        - AttributeName: noteId
           AttributeType: S
       KeySchema:
-        - AttributeName: userid
+        - AttributeName: userId
           KeyType: HASH
-        - AttributeName: noteid
+        - AttributeName: noteId
           KeyType: RANGE
       # Set the capacity based on the stage
       ProvisionedThroughput:
